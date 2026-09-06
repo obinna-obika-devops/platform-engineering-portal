@@ -3,6 +3,7 @@
 <p align="center"><strong>Self-service infrastructure with guardrails and golden paths.</strong></p>
 
 <p align="center">
+<a href="https://github.com/obinna-obika-devops/platform-engineering-portal/actions/workflows/ci.yml"><img src="https://github.com/obinna-obika-devops/platform-engineering-portal/actions/workflows/ci.yml/badge.svg" alt="Platform CI"></a>
 <img src="https://img.shields.io/badge/Internal%20Developer%20Platform-IDP-1f6feb" alt="IDP">
 <img src="https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi" alt="FastAPI">
 <img src="https://img.shields.io/badge/GitOps-Ready-EF7B4D" alt="GitOps">
@@ -23,6 +24,18 @@ flowchart LR
     F --> G[GitOps / Terraform Artifacts]
     G --> H[Audit Event]
 ```
+
+## Evidence at a glance
+
+| Engineering concern | Evidence in this repository |
+|---|---|
+| Developer-facing control plane | FastAPI service and request handling |
+| Golden paths | Service catalog and reusable platform templates |
+| Guardrails | Policy-aware validation and approval boundaries |
+| Provisioning integration | Terraform and GitOps artifact generation |
+| Developer experience | CLI-driven self-service workflow |
+| Quality | Automated tests and [GitHub Actions CI](.github/workflows/ci.yml) |
+| Auditability | Provisioning plans and audit-event flow |
 
 ## Platform contract
 
