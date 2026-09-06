@@ -1,0 +1,7 @@
+services:
+  - template: python-service
+    owner: platform-team
+    environments: [dev, staging, prod]
+  - template: go-service
+    owner: platform-team
+    environments: [dev, staging]
