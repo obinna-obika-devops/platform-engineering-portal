@@ -11,6 +11,8 @@
 
 A self-service Internal Developer Platform reference implementation. Developers describe a service request once; the platform validates policy, renders a golden path, and produces artifacts for GitOps/Terraform workflows.
 
+> **Reviewing this for a role?** Start with the [5-minute recruiter/interview walkthrough](docs/recruiter-walkthrough.md) to see the platform-engineering evidence quickly.
+
 ## Developer flow
 
 ```mermaid
@@ -38,6 +40,14 @@ flowchart LR
 - Developer CLI
 - Unit tests + CI
 
+## Recruiter evidence path
+
+- [Recruiter / Interview Walkthrough](docs/recruiter-walkthrough.md)
+- API/service code — developer request and validation flow
+- catalog/golden-path logic — reusable platform abstractions
+- policy/provisioning logic — guardrails and approval boundaries
+- tests + `.github/` — automated quality and CI evidence
+
 ## Technology
 
 | Layer | Stack |
@@ -61,3 +71,7 @@ No external repositories or cloud accounts are modified automatically by this re
 ## Engineering signal
 
 This project demonstrates the platform-engineering problem beyond deployment: **reduce developer cognitive load without hiding infrastructure, security, governance, or operational responsibilities.**
+
+## Scope
+
+This is a portfolio/reference implementation. It demonstrates platform-engineering design and automation without claiming a live enterprise deployment or production usage that is not explicitly evidenced in the repository.
